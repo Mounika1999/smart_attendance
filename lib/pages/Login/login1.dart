@@ -83,23 +83,23 @@ class _LoginState extends State<Login> {
     if (snapshot.data == null) {
       debugPrint("No data in users uid");
     } else {
-      if (snapshot.data['role'] == 'admin') {
+      if (snapshot.data['Email'] == 'admin@gmail.com') {
 // Can be made after wards
-      } else if (snapshot.data['role'] == 'teacher') {
-        globals.name = snapshot.data['name'];
-        globals.post = snapshot.data['post'];
-        globals.role = snapshot.data['role'];
-        globals.attendance_id = snapshot.data['attendance_id'];
+      } else if (snapshot.data['Email'] == 'nambimounika@gmail.com') {
+        //globals.name = snapshot.data['name'];
+        //globals.post = snapshot.data['post'];
+        //globals.role = snapshot.data['role'];
+       // globals.attendance_id = snapshot.data['attendance_id'];
         Navigator.pop(context);
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => Teacher()),
         );
-      } else if (snapshot.data['role'] == 'student') {
-        globals.clas = snapshot.data['class'];
-        globals.name = snapshot.data['name'];
-        globals.id = snapshot.data['id'];
-        globals.role = snapshot.data['role'];
+      } else if (snapshot.data['Email'] == 'student@gmail.com') {
+        //globals.clas = snapshot.data['class'];
+        //globals.name = snapshot.data['name'];
+        //globals.id = snapshot.data['id'];
+        //globals.role = snapshot.data['role'];
         debugPrint("Reached getStud func");
         getStud();
         debugPrint("Passes getStud func");

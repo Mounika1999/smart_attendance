@@ -271,7 +271,7 @@ Navigator.pop(context);
                             snap.documentID,
                             style: TextStyle(color: Color(0xff11b719)),
                           ),
-                          value: "${snap.documentID}",
+                          value: 1001, "${snap.documentID}",
                         ),
                       );
                     }
@@ -329,7 +329,8 @@ Navigator.pop(context);
                             snap.documentID,
                             style: TextStyle(color: Color(0xff11b719)),
                           ),
-                          value: "${snap.documentID}",
+                          value: 1001,
+                          //"${snap.documentID}",
                         ),
                       );
                     }
@@ -374,7 +375,7 @@ Navigator.pop(context);
 //                    debugPrint("inside build but outside else if : with  class code $selectedClassCode ");
 //                    if (!snapshot.hasData) {
 //                      const Text("Loading.....");
-//                      debugPrint("inside if   current studentId lenght : ${globals.studentId.length}");
+//                      debugPrint\("inside if   current studentId lenght : ${globals.studentId.length}");
 //                      return new Container();
 //                    }
 //                    else if (globals.startAddingStudents ==1){

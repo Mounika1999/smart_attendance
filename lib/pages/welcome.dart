@@ -32,7 +32,22 @@ class _WelcomePageState extends State<WelcomePage> {
             child: Text('Log in with Institute provided details'),
 
           ),
+          RaisedButton(
+            onPressed: (){Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Student()),
+            );},
+            child: Text('Log in with student details'),
 
+          ),
+          RaisedButton(
+            onPressed: (){Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Teacher()),
+            );},
+            child: Text('Log in with teacher details'),
+
+          ),
         ],
       ),
     );
